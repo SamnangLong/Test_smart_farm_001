@@ -1,0 +1,14 @@
+Web:
+    Publish:
+        Topic: "Control_V"
+        Message: "Button,v1,v2,v3,v4,v5,v6; "
+
+    Subscript:
+        Topic: "Monitor_Temp"
+        Message: "Temp,zone1,zone2,zone3;"
+
+        Topic: "Monitor_Humi"
+        Message: "Humi,zone1,zone2,zone3;"
+
+        Topic: "Monitor_B"
+        Message: "Button,v1,v2,v3,v4,v5,v6;"

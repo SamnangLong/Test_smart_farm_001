@@ -1,0 +1,194 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SMART FARM</title>
+    <link rel="stylesheet" href="CSS/style.css">
+    <link rel="icon" href="IMG/KINTEKs.png">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/paho-mqtt/1.0.1/mqttws31.js" type="text/javascript"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Battambang:wght@100;300;400;700;900&family=Bokor&family=Moul&display=swap" rel="stylesheet">
+
+    <script src="JS/script.js"></script>
+</head>
+<body>
+    <!--|| MAIN PROJECT ||-->
+    <div class="project">
+        <!--// PROFILE COMPANY \\-->
+        <div class="header">
+            <img src="IMG/KINTEK-Photoroom.png" alt="">
+            <h1>ផ្ទះសំណាញ់ឆ្លាតវៃ</h1>
+        </div>
+
+
+        <!--// MAIN CONTAIN \\-->
+        <div class="main">
+
+            <!--** Data Monitor Of Temperature Sensor **-->
+            <div class="data">
+                <div class="title">
+                    <h2>ការបង្ហាញទិន្នន័យ</h2>
+                </div>
+
+                <div class="left">
+                    <!-- ZONE ONE -->
+                    <div class="zone_1d">
+                        <div class="coolinput">
+                            <label for="input" class="text">សីតុណ្ហភាព ១:</label>
+                            <input type="text" placeholder="####" name="input" class="input" ID="T_ZONE1" disabled style="background-color: aliceblue;"> 
+                            
+                        </div> 
+                        <span id="temp1">°C</span>
+                    </div>
+                    <!-- ZONE TWO -->
+                    <div class="zone_2d">
+                        <div class="coolinput">
+                            <label for="input" class="text">សីតុណ្ហភាព ២:</label>
+                            <input type="text" placeholder="####" name="input" class="input" ID="T_ZONE2" disabled style="background-color: aliceblue;"> 
+                           
+                        </div> 
+                        <span id="temp2">°C</span>
+                    </div>           
+                    <!-- ZONE THREE -->
+                    <div class="zone_3d">
+                        <div class="coolinput">
+                            <label for="input" class="text">សីតុណ្ហភាព ៣:</label>
+                            <input type="text" placeholder="####" name="input" class="input" ID="T_ZONE3" disabled style="background-color: aliceblue;"> 
+                        </div> 
+                        <span id="temp3">°C</span>
+                    </div>
+                </div>
+                    
+                <div class="right">
+                    <!-- ZONE FOUR -->
+                    <div class="zone_4d">
+                        <div class="coolinput">
+                            <label for="input" class="text">សំណើម ១:</label>
+                            <input type="text" placeholder="####" name="input" class="input" ID="H_ZONE1" disabled style="background-color: aliceblue;"> 
+                            
+                        </div> 
+                        <span id=Hemp1">g.m<sup>-3</sup></span>
+                    </div>
+
+                    <!-- ZONE FIVE -->
+                    <div class="zone_5d">
+                        <div class="coolinput">
+                            <label for="input" class="text">សំណើម ២:</label>
+                            <input type="text" placeholder="####" name="input" class="input" ID="H_ZONE2" disabled style="background-color: aliceblue;"> 
+                            
+                        </div> 
+                        <span id="Humi2">g.m<sup>-3</sup></span>
+                    </div>    
+
+                    <!-- ZONE SIX -->
+                    <div class="zone_6d">
+                        <div class="coolinput">
+                            <label for="input" class="text">សំណើម ៣:</label>
+                            <input type="text" placeholder="####" name="input" class="input" ID="H_ZONE3" disabled style="background-color: aliceblue;"> 
+                            
+                        </div> 
+                        <span id="Humi3">g.m<sup>-3</sup></span>
+                    </div>
+                </div>
+            </div>
+
+            <!--** Valve Control **-->
+            <div class="control">
+                <div class="title">
+                    <h2>ការបញ្ជាវ៉ានទឹក</h2>
+                </div>
+
+                <!-- ZONE ONE -->
+                <div class="zone_1c">
+                    <div class="section left">
+                        <h3>តំបន់​ ១</h3>
+                        <img src="IMG/VAN1_OFF.png" alt="Water spray van" id="ZONE1">
+                        
+                        <label class="switch">
+                            <input type="checkbox" class="checkbox"  id="switch1"/>
+                            <span class="slider"></span>
+                        </label>
+                    </div>
+                </div>
+
+                <!-- ZONE TWO -->
+                <div class="zone_2c">
+                    <div class="section left">
+                        <h3>តំបន់ ២</h3>
+                        <img src="IMG/VAN1_OFF.png" alt="Water spray van" id="ZONE2">
+
+                        
+                        <label class="switch">
+                            <input type="checkbox" class="checkbox"  id="switch2"/>
+                            <span class="slider"></span>
+                        </label>
+                    </div>
+                </div>
+
+                <!-- ZONE THREE -->
+                <div class="zone_3c">
+                    <div class="section left">
+                        <h3>តំបន់ ៣</h3>
+                        <img src="IMG/VAN1_OFF.png" alt="Water spray van" id="ZONE3">
+                        
+                        <label class="switch">
+                            <input type="checkbox" class="checkbox"  id="switch3"/>
+                            <span class="slider"></span>
+                        </label>
+                    </div>
+                </div>
+
+                <!-- ZONE FOUR -->
+                <div class="zone_4c">
+                    <div class="section left">
+                        <h3>តំបន់ ៤</h3>
+                        <img src="IMG/VAN1_OFF.png" alt="Water spray van" id="ZONE4">
+                        
+                        <label class="switch">
+                            <input type="checkbox" class="checkbox"  id="switch4"/>
+                            <span class="slider"></span>
+                        </label>
+                    </div>
+                </div>
+
+                <!-- ZONE FIVE -->
+                <div class="zone_5c">
+                    <div class="section left">
+                        <h3>តំបន់ ៥</h3>
+                        <img src="IMG/VAN1_OFF.png" alt="Water spray van" id="ZONE5">
+                        
+                        <label class="switch">
+                            <input type="checkbox" class="checkbox"  id="switch5"/>
+                            <span class="slider"></span>
+                        </label>
+                    </div>
+                </div>
+
+                <!-- ZONE SIX -->
+                <div class="zone_6c">
+                    <div class="section left">
+                        <h3>តំបន់ ៦</h3>
+                        <img src="IMG/VAN1_OFF.png" alt="Water spray van" id="ZONE6">
+                        
+                        <label class="switch">
+                            <input type="checkbox" class="checkbox"  id="switch6"/>
+                            <span class="slider"></span>
+                        </label>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+
+        <!--// SPONSER \\-->
+        <div class="footer">
+            <h3>KINTEK TECHNOLOGY CO.,LTD</h3>
+        </div>
+
+    </div>
+
+    <script src="JS/control.js"></script>
+
+</body>

@@ -1,0 +1,525 @@
+body {
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    
+}
+
+
+/* --| MAIN PROJECT |--  */
+.project{
+    width: 370px;
+    height: 800px;
+    /* background-color: blueviolet; */
+
+    display: block;
+    justify-content: center;
+    align-items: center;
+
+    margin-top: -3px;
+}
+
+
+
+/* --| PROFILE COMPANY |--  */
+.project .header{
+    width: 363px;
+    height: 80px;
+    background-color: #c8d5e6;
+
+    /* display: flex; */
+    justify-content: center;
+    align-items: center;    
+
+    border: 4px outset #030880;
+}
+.header img{
+    width: 100px;
+    height: 80px;
+
+    margin-top: 2px;
+
+    float: left;
+}
+.header h1{
+    width: auto;
+    height: auto;
+    margin-left: 20px;
+
+    float: left;
+
+    font-family: "Moul", serif;;
+    font-weight: bold;
+    font-size: 25px;
+    color: #030880;
+}
+
+
+
+
+/* --| MONITOR |--  */
+.project .main{
+    width: 370px;
+    height: 655px;
+    /* background-color: yellow; */
+    margin-top: 5px;
+
+    display: block;
+    justify-content: center;
+    align-items: center;    
+}
+/* --| MONITOR DATA |--  */
+.main .data{
+    width: 362px;
+    height: 235px;
+    background-color: #c8d5e6;
+
+    border-radius: 10px;
+    /* background-color: #eeeeee; */
+    border: 4px double #030880;
+}
+
+/* --| MONITOR DATA |--  */
+.main .data .title{
+    width: 362px;
+    height: 40px;
+    /* background-color: darkgreen; */
+
+    margin-top: -15px;
+}
+
+.main .data .title h2{
+    padding-top: 5px;
+    font-family: "Moul", serif;;
+    font-weight: bold;
+    font-size: 21px;
+    color: #030880;
+}
+
+/* --| MONITOR DATA ZONE LEFT |--  */
+.data .left{
+    width: 181px;
+    height: 190px;
+
+    /* background-color: deeppink; */
+    float: left;
+}
+.data .left label{
+    font-family: "Bokor", system-ui;
+    font-size: 10px;
+    font-weight: bold;
+}
+
+/* --| MONITOR DATA ZONE RIGHT |--  */
+.data .right{
+    width: 181px;
+    height: 190px;
+
+    /* background-color: antiquewhite; */
+    float: left;
+}
+.data .right label{
+    font-family: "Bokor", system-ui;
+    font-size: 10px;
+    font-weight: bold;
+}
+
+
+/* -- ZONE ONE -- */
+.main .data .left .zone_1d{
+    width: 185px;
+    height: 60px;
+    /* background-color: lightgray; */
+
+    display: flex;
+    justify-content: center;
+    align-items: center;  
+}
+
+/* -- ZONE TWO -- */
+.main .data .left .zone_2d{
+    width: 185px;
+    height: 64px;
+    /* background-color: lightgray; */
+
+    display: flex;
+    justify-content: center;
+    align-items: center;  
+}
+
+/* -- ZONE THREE -- */
+.main .data .left .zone_3d{
+    width: 185px;
+    height: 64px;
+    /* background-color: lightgray; */
+
+    display: flex;
+    justify-content: center;
+    align-items: center;  
+}
+
+/* -- ZONE FOUR -- */
+.main .data .right .zone_4d{
+    width: 185px;
+    height: 60px;
+    /* background-color: lightgray; */
+
+    display: flex;
+    justify-content: center;
+    align-items: center;  
+}
+
+/* -- ZONE FIVE -- */
+.main .data .right .zone_5d{
+    width: 185px;
+    height: 64px;
+    /* background-color: lightgray; */
+
+    display: flex;
+    justify-content: center;
+    align-items: center;  
+}
+
+/* -- ZONE SIX -- */
+.main .data .right .zone_6d{
+    width: 185px;
+    height: 64px;
+    /* background-color: lightgray; */
+
+    display: flex;
+    justify-content: center;
+    align-items: center;  
+}
+
+/* || BOX DISPLAY || */
+.main .data .coolinput {
+    display: flex;
+    flex-direction: column;
+    width: fit-content;
+    position: static;
+    max-width: 120px;
+}
+  
+.main .data .coolinput label.text {
+    font-size: 15px;
+    color: #030880;
+    font-weight: 700;
+    position: relative;
+    top: 0.5rem;
+    margin: 0 0 0 7px;
+    padding: 0px 2px 0px 2px;
+    background: #e8e8e8;
+    width: fit-content;
+}
+  
+.main .data .coolinput input[type=text].input {
+    padding: 10px 9px;
+    font-size: 0.8rem;
+    border: 2px #818CF8 solid;
+    border-radius: 5px;
+    background: #e8e8e8;
+
+    text-align: center;
+}
+  
+.main .data .coolinput input[type=text].input:focus {
+   outline: none;
+}
+.main .data span{
+    margin-top: 27px;
+    margin-left: 5px;
+}
+
+
+
+
+
+/* --| CONTROL SOLENIOD VALVE |--  */
+.main .control{
+    width: 370px;
+    height: 0px;
+    background-color: red;
+
+    margin-top: -12px;
+}
+
+.main .control .title{
+    width: 370px;
+    height: 40px;
+    background-color: #c8d5e6;
+}
+
+.main .control .title h2{
+    padding-top: 5px;
+    font-family: "Moul", system-ui;
+    font-size: 21px;
+    font-weight: bold;
+    color: #030880;
+}
+
+.main .control img{
+    width: 80px;
+    height: 80px;
+
+    margin-top: -20px;
+    margin-bottom: 7px;
+}
+
+/* -- CONTROL ZONE ONE -- */
+.main .control .zone_1c{
+    width: 112px;
+    height: 170px;
+    background-color: #c8d5e6;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;  
+    float: left;
+    margin-top: 5px;
+    margin-left: 0.5px;
+
+    border-radius: 10px;
+    border: 4px double #030880;
+}
+.control .zone_1c h3{
+    margin-top: 0px;
+
+    font-family: "Bokor", system-ui;
+    font-size: 18px;
+    font-weight: bold;
+    color: #030880;
+}
+
+/* -- CONTROL ZONE TWO -- */
+.main .control .zone_2c{
+    width: 112px;
+    height: 170px;
+    background-color: #c8d5e6;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;  
+    float: left;
+
+    margin-top: 5px;
+  
+  
+  border-radius: 10px;
+    border: 4px double #030880;  margin-left: 4px;
+}
+.control .zone_2c h3{
+    margin-top: 0px;
+
+    font-family: "Bokor", system-ui;
+    font-size: 18px;
+    font-weight: bold;
+    color: #030880;
+}
+
+/* -- CONTROL ZONE THREE -- */
+.main .control .zone_3c{
+    width: 112px;
+    height: 170px;
+    background-color: #c8d5e6;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;  
+    float: left;
+    margin-top: 5px;
+    margin-left: 4px;
+
+    border-radius: 10px;
+    border: 4px double #030880;
+}
+
+.control .zone_3c h3{
+    margin-top: 0px;
+
+    font-family: "Bokor", system-ui;
+    font-size: 18px;
+    font-weight: bold;
+    color: #030880;
+}
+
+/* -- CONTROL ZONE FOUR -- */
+.main .control .zone_4c{
+    width: 112px;
+    height: 170px;
+    background-color: #c8d5e6;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;  
+    float: left;
+    margin-top: 5px;
+    margin-left: 0.5px;
+
+    border-radius: 10px;
+    border: 4px double #030880;
+}
+.control .zone_4c h3{
+    margin-top: 0px;
+
+    font-family: "Bokor", system-ui;
+    font-size: 18px;
+    font-weight: bold;
+    color: #030880;
+}
+
+/* -- CONTROL ZONE FIVE -- */
+.main .control .zone_5c{
+    width: 112px;
+    height: 170px;
+    background-color: #c8d5e6;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;  
+    float: left;
+    margin-top: 5px;
+    margin-left: 4px;
+
+    border-radius: 10px;
+    border: 4px double #030880;
+}
+
+
+.control .zone_5c h3{
+    margin-top: 0px;
+
+    font-family: "Bokor", system-ui;
+    font-size: 18px;
+    font-weight: bold;
+    color: #030880;
+}
+
+/* -- CONTROL ZONE SIX -- */
+.main .control .zone_6c{
+    width: 112px;
+    height: 170px;
+    background-color: #c8d5e6;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;  
+    float: left;
+
+    margin-top: 5px;
+    margin-left: 4px;
+
+    border-radius: 10px;
+    border: 4px double #030880;
+}
+.control .zone_6c h3{
+    margin-top: 0px;
+
+    font-family: "Bokor", system-ui;
+    font-size: 18px;
+    font-weight: bold;
+    color: #030880;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* -----BUTTON----- */
+.switch {
+  font-size: 17px;
+  position: relative;
+  display: inline-block;
+  width: 5em;
+  height: 2.27em;
+}
+
+/* Hide default HTML checkbox */
+.switch input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+/* The slider */
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: gray;
+  outline: 1px solid #030880;
+  box-shadow: 0 1px 1.5px #f3f8fe inset, 0 4px 5px #c8d5e6;
+  transition: 0.4s;
+  border-radius: 30px;
+}
+
+.slider:before {
+  position: absolute;
+  content: "off";
+  font-size: 0.85em;
+  color: #d2d6d8;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 2em;
+  min-width: 2em;
+  border-radius: 20px;
+  left: 6px;
+  bottom: 0.3em;
+  background-color: red;
+  outline: 2px solid #d2d6d8;
+  transition: 0.4s;
+}
+
+.switch input:checked + .slider:before {
+  content: "on";
+  background-color: green;
+  color: white;
+  transform: translateX(3.1em);
+}
+
+
+
+
+
+/* --| sponser |--  */
+.project .footer{
+    width: 370px;
+    height: 50px;
+    background-color: #c8d5e6;
+
+    margin-top: -15px;
+}
+.footer h3{
+    font-size: 22px;
+    color: #030880;
+
+    padding-top: 15px;
+}
